@@ -1,0 +1,260 @@
+body {
+    font-size: 14px;
+}
+
+#header {
+    background: url("/images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 800px;
+
+    #navigation {
+        width: 100%;
+        min-height: 80px;
+        position: relative;
+        background: $black-1;
+        opacity: 0.8;
+
+        .navbar-header {
+            .navbar-brand {
+                font-size: 2em;
+                font-family: $font-family;
+                font-weight: bold;
+                color: $white;
+                padding: 1em 0;
+                text-transform: uppercase;
+            }
+        }
+
+        #navbar {
+            .navbar-nav {
+                li {
+                    padding: 1em 0;
+                    a {
+                        color: $white;
+                        font-weight:bold;
+                        text-transform: uppercase;
+                        font-size: 1em;
+
+                        &:hover, &:focus, &:active {
+                            border: 1px solid $white;
+                            background: transparent;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    .welcome {
+        h1 {
+            color: $white;
+            font-weight: 100;
+            font-size: 4em;
+            padding: 5em 0 0 0;
+        }
+    }
+    .actions {
+        padding: 4em 0 0 0;
+    }
+}
+
+#click-action {
+    background: $black;
+    min-height: 16em;
+    h2 {
+        color: $white;
+        padding: 1em 0 0.5em 0;
+        font-weight: 100;
+        font-size: 3.5em;
+    }
+    form {
+        padding: 2em 0 2.5em 0;
+    }
+}
+
+#about {
+    h2 {
+        font-weight: 100;
+        font-size: 3.5em;
+        padding: 1em 0 1em 0;
+        color: $black-1;
+    }
+    p {
+        line-height: 1.6;
+        font-size: 1.6em;
+        font-weight: 300;
+        color: $black-1;
+        padding: 0 0 1em 0;
+    }
+}
+
+
+#signit {
+    background: url("/images/banner-bg.jpg");
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 13em;
+    width: 100%;;
+    h2 {
+        font-weight: 100;
+        font-size: 3.5em;
+        padding: 1em 0 1em 0;
+        color: $white;
+    }
+    p {
+        line-height: 1;
+        font-size: 1.6em;
+        font-weight: 300;
+        color: $white;
+        padding: 0 0 1.5em 0;
+    }
+    .action {
+        margin: 1em 0 1.5em 0;
+    }
+}
+
+#prices {
+    background: #f6f6f6;
+    padding: 0 0 2em;
+    h2 {
+        font-weight: 100;
+        font-size: 3.5em;
+        padding: 1em 0 1em 0;
+        color: $black-1;
+    }
+    .price-container {
+        background: $white;
+        box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.08);
+        &:nth-child(3) {
+            position: relative;
+            top: -1em;
+            padding: 0.5em 0 2.8em 0;
+        }
+        .price-header {
+            border-top-width: 5px;
+            border-top-style: solid;
+            &.silver {
+                border-top-color: #909090;
+            }
+            &.gold {
+                border-top-color: #c09b4d;
+            }
+            &.royal {
+                border-top-color: #17267f;
+            }
+            small {
+                color: $black-1;
+                padding: 0.8em;
+            }
+        }
+        .price-content {
+            .line-bottom {
+                border-bottom: 1px solid $black-1;
+                padding: 0.8em 0;
+            }
+            strong {
+                font-size: 2em;
+            }
+            .feature-list {
+                list-style: none;
+                text-align: left;
+                padding: 0;
+                li {
+                    font-size: 1.1em;
+                }
+            }
+        }
+        .price-footer {
+            margin: 1em 0 0 0;
+            .btn-prices {
+                border-radius: 0;
+                width: 100%;
+                position: relative;
+                color: $white;
+                &.silver {
+                    background: #909090;
+                }
+                &.gold {
+                    background: #c09b4d;
+                }
+                &.royal {
+                    background: #17267f;
+                }
+            }
+        }
+    }
+}
+
+#contact {
+    h2 {
+        font-weight: 100;
+        font-size: 3.5em;
+        padding: 1em 0 1em 0;
+        color: $black-1;
+    }
+
+    .input-custom {
+        border: 2px solid $black;
+    }
+
+    .btn-custom {
+        border: 2px solid $black;
+        color: $black;
+        margin: 1em 0;
+    }
+}
+
+#footer {
+    background: url("/images/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    min-height: 10em;
+    h2 {
+        font-size: 2em;
+        font-family: $font-family;
+        font-weight: bold;
+        color: $white;
+        padding: 1em 0;
+        text-transform: uppercase;
+    }
+    p {
+        color: $white;
+    }
+    .social-list {
+        padding: 0;
+        list-style: none;
+        li {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid $white;
+            background: transparent;
+            margin: 1em 0 1em 0.8em;
+            display: inline-block;
+            i {
+                font-size: 1.8em;
+                padding: 0.4em;
+                color: $white;
+            }
+
+            &:hover, &:focus, &:active {
+                background: $white;
+                i {
+                    color: $black;
+                }
+            }
+        }
+    }
+    small {
+        color: $white;
+        display: block;
+        padding: 1.5em 0 1.5em 0;
+    }
+}
